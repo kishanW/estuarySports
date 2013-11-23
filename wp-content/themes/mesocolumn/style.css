@@ -43,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 /*/////////////////////////////////////////////////////////////////////////////
 // GLOBAL CSS
 ////////////////////////////////////////////////////////////////////////////*/
+
 body {
 	font-family: arial, sans-serif;
 	margin: 0px;
@@ -3541,7 +3542,27 @@ div#mobile-nav { display:inline !important; }
 	box-shadow: 0 2px 0 #FCF9EE, 0 4px 0 rgba(0, 0, 0, .15);
 	}
 
-
+	footer .innerwrap, header .innerwrap, .innerwrap-custom-header, #bodywrap, #main-navigation .innerwrap{
+		max-width: 100%;
+	}
+	#mobile-nav .select-pri{
+		font-weight: 700 !important;
+		width: 100%;
+		font-size: 1.5em;
+	}
+	#mobile-nav select{
+		font-family: Open Sans !important;
+	}
+	#mobile-nav select option:hover{
+		background: #eee;
+	}
+	#siteinfo a{
+		line-height: 0.8em;
+	}
+	#wrapper .content{
+		padding: 2% !important;
+		box-sizing: border-box !important;
+	}
 }
 
 @media only screen and (min-width:280px) and (max-width:750px){
@@ -3610,3 +3631,60 @@ width: 100%;
 }
 
 @media only screen and (min-width:200px) and (max-width:322px){}
+
+
+/*
+CUSTOM CSS
+*/
+
+*{
+	font-weight: 500 !important;
+}
+
+/*READ MORE BUTTONS*/
+#post-entry article .post-more a{
+	background: #16a085;
+	font-weight: normal;
+	font-size: 1.25em;
+	border: none;
+	border-radius: 5px;
+	text-shadow: none !important;
+	color: #eee;
+}
+#post-entry article .post-more a:hover{
+	background: #1abc9c;
+	border: none;
+	color: #fff;
+}
+
+/*CATEGORIES*/
+#main-navigation .sf-menu a{
+	border-color: #16a085 !important;
+	font-weight: 900 !important;
+	font-size: 1.5em !important;
+}
+#main-navigation .sf-menu a:hover{
+	font-weight: 300;
+	background-color: #16a085 !important;
+}
+
+/*SITE TITLE*/
+#siteinfo{
+	width: 100%;
+	background: #e74c3c;
+	padding: 3em 0;
+	text-align: center;
+}
+#siteinfo a{
+	font-size: 3em;
+	font-weight: 900 !important;
+}
+#siteinfo a:hover{
+	color: #eee;
+}
+
+/*POST TITLE */
+#post-entry article.post-single h1.post-title, h1.folio{
+	font-weight: 300 !important;
+	font-size: 5em;
+}
