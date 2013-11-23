@@ -3354,6 +3354,7 @@ padding: 12px 12px 12px 42px !important;
   background-image: url("images/alert.png");
   border-color: #E1CA59;
   color: #837639;
+  display: none;
 }
 .theme-messages.error {
   background-color: #F8E4E2;
@@ -3678,13 +3679,48 @@ CUSTOM CSS
 #siteinfo a{
 	font-size: 3em;
 	font-weight: 900 !important;
+	color: #ecf0f1;
 }
 #siteinfo a:hover{
-	color: #eee;
+	color: #fff;
 }
 
 /*POST TITLE */
 #post-entry article.post-single h1.post-title, h1.folio{
 	font-weight: 300 !important;
 	font-size: 5em;
+}
+
+/*THEME ALERT*/
+.theme-messages alert{
+	display: none !important;
+}
+
+/*INPUTS*/
+input[type=text], input[type=password], input[type=email], textarea{
+	border: none;
+	background: #eee;
+	outline: none !important;
+	box-sizing: border-box;
+	min-height: 30px;
+	padding: 3px;
+	font-family: Open Sans !important;
+	border-radius: 5px;
+}
+input[type=submit]{
+	border: none;
+	background: #16a085;
+	padding: 5px 10px;
+	min-height: 20px;
+	line-height: 20px;
+	font-family: Open Sans;
+	font-size: 1.25em;
+	font-weight: 300 !important;
+	color: #efefef;
+	width: 8em;
+	border-radius: 5px;
+}
+input[type=submit]:hover{
+	cursor: pointer;
+	background: #1abc9c;
 }
